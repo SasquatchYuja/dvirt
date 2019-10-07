@@ -1,0 +1,4 @@
+# TODO
+
+- handle big images by using a tmpfs with a limit of size, instead of copying everything in the container
+- try to reduce the size by doing the histogram by hand and without using Numpy
