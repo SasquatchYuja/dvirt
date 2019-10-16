@@ -10,7 +10,7 @@ import numpy as np
 
 
 
-def histogram(image, plot=False, output=None):
+def histogram(image, plot, output):
     img = Image.open(image)
     hist = {}
 

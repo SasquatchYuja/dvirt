@@ -18,13 +18,13 @@ Using docker build and docker run
 
 Run the following line after having started the docker container:
 src/client.py imgs/img.jpg
+-> some test images (jpg/png/...) are available at ./imgs/*
 
-* both scripts will run the built image with -d
+* both scripts will run the built image with -d (background)
 * built image's name: histograme[_web] depending on which script is used
-* some test images (jpg/png/...) are available at ./imgs/*
 
 If filename not allowed (see src/app.py:HistograMe())
---> will return HTTP 500
+--> will return HTTP 500 (Flask)
 
 Notes:
 It is possible to drastically lower the image size by :
@@ -34,3 +34,4 @@ requires to install all numpy dependencies by hand
 even worse
 - not using Python
 for instance, check: https://github.com/alexkirsz/dvirt that uses Rust
+- use an executable packer like UPX
